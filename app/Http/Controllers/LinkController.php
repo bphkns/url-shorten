@@ -29,8 +29,6 @@ class LinkController extends Controller
 
     public function store(Request $request)
     {
-        dd($request->get('url'));
-
         $this->validate($request, [
             'url' => 'required|url',
         ], [
